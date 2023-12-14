@@ -20,4 +20,8 @@ export class MainPageComponent {
       power: 5000,
     },
   ];
+
+  onNewCharacter(character: Character): void {
+    this.characters.push(character);
+  }
 }
