@@ -20,8 +20,6 @@ export class CharacterFormComponent {
   emitCharacter(): void {
     if (this.character.name.length === 0) return;
 
-    const newCharacter: Character = { ...this.character, id: uuid() };
-
     this.onNewCharacter.emit(this.character);
 
     this.character = {

@@ -14,7 +14,6 @@ export class ListComponent {
   public onDelete: EventEmitter<string> = new EventEmitter();
 
   onDeleteCharacter(id: string): void {
-    // TODO: Emitir el ID del persona a eliminar
     this.onDelete.emit(id);
   }
 }
